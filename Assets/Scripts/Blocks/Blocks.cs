@@ -31,11 +31,11 @@ public class Blocks : MonoBehaviour
     //Needs to be configured for screen touches
     void BlockMovmement()
     {
-        if (Input.GetKeyDown(KeyCode.LeftArrow) && transform.position.x > -5)
+        if (Input.GetKeyDown(KeyCode.LeftArrow) && transform.position.x > -7.48)
         {
             transform.position += new Vector3(-1, 0, 0);
         } 
-        else if(Input.GetKeyDown(KeyCode.RightArrow) && transform.position.x < 4)
+        else if(Input.GetKeyDown(KeyCode.RightArrow) && transform.position.x < 6.52)
         {
             transform.position += new Vector3(1,0,0);
         }
