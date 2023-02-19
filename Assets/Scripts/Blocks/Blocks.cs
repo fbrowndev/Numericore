@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
 
 /// <summary>
 /// Handling all basic behaviour for the blocks
@@ -11,7 +13,8 @@ public class Blocks : MonoBehaviour
     [Header("Block Settings")]
     [SerializeField] private int _points;
 
-
+    [Header("Value Text")]
+    [SerializeField] private TMP_Text _valueText;
     #endregion
 
     // Start is called before the first frame update
@@ -47,6 +50,7 @@ public class Blocks : MonoBehaviour
     void RandomPoints()
     {
         _points = Random.Range(2, 30);
+        _valueText.text = _points.ToString();
     }
 
     #endregion
